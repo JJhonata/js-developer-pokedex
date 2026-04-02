@@ -37,6 +37,46 @@
         </div>
     </section>
 
+    <!-- Modal de Detalhes -->
+    <div id="pokemonModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-header">
+                    <img id="modalImg" src="" alt="">
+                    <div class="modal-info">
+                        <h2 id="modalName"></h2>
+                        <p id="modalNumber"></p>
+                        <ol id="modalTypes" class="types"></ol>
+                    </div>
+                </div>
+
+                <div class="modal-details">
+                    <div class="details-section">
+                        <h3>Medidas</h3>
+                        <p><strong>Altura:</strong> <span id="modalHeight"></span> m</p>
+                        <p><strong>Peso:</strong> <span id="modalWeight"></span> kg</p>
+                    </div>
+
+                    <div class="details-section">
+                        <h3>Habilidades</h3>
+                        <ul id="modalAbilities"></ul>
+                    </div>
+
+                    <div class="details-section">
+                        <h3>Ataques</h3>
+                        <ul id="modalMoves"></ul>
+                    </div>
+
+                    <div class="details-section">
+                        <h3>Status</h3>
+                        <ul id="modalStats"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Nosso JS -->
     <script src="/assets/js/pokemon-model.js"></script>
     <script src="/assets/js/poke-api.js"></script>
